@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>서브페이지 만들기</title>
+        
+        <style>
+            a{                
+                text-decoration: none;
+                color: black;
+            }
+            dt{
+                font-weight: 600;
+                font-size: 120%;
+            }
+            
+            a dd{ /* a 밑에 있는 dd에 적용 */
+                margin: 10px;
+            }
+            
+            /* h2에 하늘색 배경 추가 */
+            h2 {
+                background-color: lightblue;
+                padding: 10px;
+            }
+            
+            /* 아래 부분에 첫 페이지로 돌아가는 링크 스타일 추가 */
+            .back-link {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            /* 버튼 스타일 추가 */
+            .button-link {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 5px;
+                margin: 20px auto;
+                display: block;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        
+
+        <h2>경제 뉴스 기사 분류</h2>
+        <hr/>
+        <dl>
+            <a href="#">
+                <dt>용도</dt>
+                <dd>사용자가 입력한 뉴스 기사의 내용을 분석하여 <br>
+                    글로벌 경제, 금융, 부동산, 증권 중 해당하는 카테고리로 분류하는 시스템을 구축. </dd><br><br><br>
+            </a>
+
+            <a href="#">
+                <dt>구성요소</dt>
+                <dd>이 프로젝트는 경제 관련 뉴스 기사 분류모델을 구현하기 위해 딥러딩 모델을 웹 환경으로 활용해<br>
+                    사용자 입력을 시시간으로 처리하고 결과를 제공하는 기능을 넣어 만들었습니다.<br><br>
+                    1. 목표설정<br>
+                    2. 데이터 전처리 및 토크나이저 설정
+                    3. 모델 학습 준비 <br>
+                    4. 웹 서버 및 CGI 설정<br><br><br>
+                </dd>
+            </a>
+
+            <a href="#">
+                <h4>목표 설정</h4>
+                <dd>사용자가 입력한 뉴스 기사를 분석하여 해당 카테고리로 자동 분류하고, <br>
+                    그 결과를 웹페이지에서 실시간으로 제공하는 시스템을 구축하기.<br><br><br>
+                </dd>
+            </a>
+
+            <a href="#">
+                <h4>데이터 전처리 및 토크나이저 설정</h4>
+                <dd>사용자가 입력한 뉴스 기사를 모델이 처리할 수 있는 형식으로 변환하기위해 <br>
+                    transformers 라이브러리의 ElectraTokenizer를 사용했습니다.<br>
+                    분류된 결과를 사용자가 이해 할 수 있는 형태로 출력하기 위해 4개의 카테고리를 정의해주었습니다.<br><br><br>
+                </dd>
+            </a>
+
+            <a href="#">
+                <h4>모델 학습</h4>
+                <dd>경제 관련 뉴스기사를 분류하기 위해 BERT+LSTM 모델을 사용했습니다. <br>
+                BERT는 문장의 문맥을 반영한 텍스트 임베딩을 생성하는 사전 학습된 모델입니다.<br>
+                LSTM은 문장의 순서과 관계를 반영하는 순환 신경망(RNN) 계열의 모델로<br>
+                BERT의 출력값을더 세밀하게 학습할 수 있도록 사용했습니다.<br><br><br>
+
+            </dd>
+            </a>
+
+            <a href="#">
+                <h4>웹 서버 및 CGI 설정</h4>
+                <dd>학습된 경제뉴스기사 분류 모델을 CGI 스크립트 내에서 로드됩니다.<br>
+                    모델은 학습결과가 저장된 파일을 불러옵니다.<br>
+                    입력된 문장을 전처리 및 토큰화 한 후 모델에 전달하여 뉴스기사를 분류합니다.<br>
+                    예측된 감정 분석 결과는 HTML 형식으로 웹 브라우저에 출력됩니다.<br>
+                </dd>
+            </a>
+        </dl>
+        <hr/>
+        <!-- 모델 사용하기 버튼 추가 -->
+        <div>
+            <a href="C:\Users\kimjaesung\9.자연어처리\Crawling_news_nltk_project\index.html" class="button-link">모델 사용하기</a>
+        </div>
+
+        <!-- 첫 페이지로 가기 링크 추가 -->
+        <div class="back-link">
+            <a href="file:///C:/Users/kimjaesung/10.Basic_WEb/DAY_04/test/ex_myproject.html">첫 페이지로 가기</a>
+        </div>
+
+        
+        
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>서브페이지 만들기</title>
+        
+        <style>
+            a{                
+                text-decoration: none;
+                color: black;
+            }
+            dt{
+                font-weight: 600;
+                font-size: 120%;
+            }
+            
+            a dd{ /* a 밑에 있는 dd에 적용 */
+                margin: 10px;
+            }
+            
+            /* h2에 하늘색 배경 추가 */
+            h2 {
+                background-color: lightblue;
+                padding: 10px;
+            }
+            
+            /* 아래 부분에 첫 페이지로 돌아가는 링크 스타일 추가 */
+            .back-link {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            /* 버튼 스타일 추가 */
+            .button-link {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 5px;
+                margin: 20px auto;
+                display: block;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        
+
+        <h2>교통 표지판 분류 모델</h2>
+        <hr/>
+        <dl>
+            <a href="#">
+                <dt>용도</dt>
+                <dd>교통 표지판 분류를 위한 딥러닝 기반의 이미지 분류 모델을 구축하고 <br>
+                이를 웹 환경에서 사용자가 이미지를 업로드하여 예측 결과를 확인할 수 있도록 구현한것입니다.</dd>
+            </a>
+
+            <a href="#">
+                <dt>구성요소</dt>
+                <dd>프로젝트의 흐름을 설명드리겠습니다.<br><br>
+                    1. 데이터 수집 및 전처리<br>
+                    2. 모델 설계 및 학습<br>
+                    3. 모델 평가 및 웹 인터페이스 구현<br><br><br>
+                </dd>
+            </a>
+
+            <a href="#">
+                <h4>테이터 수집 및 전처리</h4>
+                <dd>Kaggle에 있는 교통표지판 이미지를 불러와서 데이터를 딥러닝 모델에 입력할 수 있도록 <br>
+                    이미지에 대한 정규화와 텐서화를 진행했습니다.<br>
+                    전처리 단계에서 이미지 데이터에 대해 랜덤 회전, 수평 뒤집기등의 데이터 증강기법을 적용했습니다.<br><br><br>
+                </dd>
+            </a>
+
+            <a href="#">
+                <h4>모델 설계 및 학습</h4>
+                <dd>CNN 모델을 사용하여 전처리한 이미지를 학습하게 했습니다. <br>
+                2D 합성곱 계층으로 이미지의 특징을 추출해서<br>
+                Bacth Normalization으로 학습 안정성을 높였구요.<br>
+                Dropout을 설정해 과적합을 방지했고 Adam Optimizer를 사용해 <br>
+                모델 파라미터를 업데이트 하는 형식으로 모델을 구성했습니다. <br><br><br>
+
+            </dd>
+            </a>
+
+            <a href="#">
+                <h4>모델 평가 및 웹 인터페이스 구현</h4>
+                <dd>학습된 모델을 사용해 정확도(Accuracy)를 평가한 후 정확도가 충분히 나왔을 때 모델을 저장했습니다.<br>
+                    CGI를 사용하여 웹 서버에서 교통 표지판 이미지를 업로드하고 분류하는 기능을 구현했습니다.<br>
+                    사용자가 이미지를 업로드하면 서버로 전송되고 모델이 이미지를 처리하여 예측 결과를 봔환합니다.<br>
+                    예측된 교통 표지판의 라벨과 업로드한 이미지를 웹페이지에서 확인 할 수 있습니다.<br>
+                </dd>
+            </a>
+        </dl>
+        <hr/>
+        <!-- 모델 사용하기 버튼 추가 -->
+        <div>
+            <a href="C:\Users\kimjaesung\8.OPEN_CV\OpenCVProject\WEB\index.html" class="button-link">모델 사용하기</a>
+        </div>
+
+        <!-- 첫 페이지로 가기 링크 추가 -->
+        <div class="back-link">
+            <a href="file:///C:/Users/kimjaesung/10.Basic_WEb/DAY_04/test/ex_myproject.html">첫 페이지로 가기</a>
+        </div>
+
+        
+        
+    </body>
+</html>

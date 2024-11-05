@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & TAG</title>
+    <style>
+        * {text-align: center;}
+        html {
+            height:100%;
+        }
+        body{ 
+            height: 100vh; width:100vw;
+        }
+        #header, header {
+                background-color: antiquewhite;
+                height: 20vh;}
+        #menu, nav {background-color: aqua;
+                height: 80vh;
+                width: 20vw;
+                float:left;}
+        #center, selction {
+                background-color: pink;
+                display:inline-block;
+                height: 70vh;
+                width:60vw;}
+        #side, aside{
+                background-color: greenyellow;
+                width:20vw;
+                height: 70vh;
+                float:right;}
+        #footer, footer{background-color: aliceblue;
+                height:10vh;
+                clear:both;}
+    </style>
+</head>
+<body>
+    <!-- <div id="header">Header</div>
+    <div id="menu">Menu</div>
+    <div id="center">Center</div>
+    <div id="side">Side</div>
+    <div id="footer">Footer</div> -->
+    <header>Header
+        <h1>MY PROJECT DEMO</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#ML">MiniProject_ML</a></li>
+            <li><a href="#DL">MiniProject_DeepLearning</a></li>
+            <li><a href="#CV">MiniProject_Open_CV</a></li>
+            <li><a href="#NLTK">MiniProject_NLTK</a></li>
+        </ul>
+    </nav>
+    <selction>
+        <div id="ML">
+            머신러닝
+        </div>
+        <div id="DL">
+            딥러닝
+        </div>
+        <div id="CV">
+            OPENCV
+        </div>
+        <div id="NLTK">
+            자연어
+        </div>
+    </selction>
+    <aside>Side</aside>
+    <footer>Footer</footer>
+</body>
+</html>
